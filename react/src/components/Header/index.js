@@ -4,7 +4,7 @@ import { Title } from '../Styled'
 
 const Header = () => (
   <div>
-    <Title>React Structure</Title>
+    <Title></Title>
   </div>
 )
 
