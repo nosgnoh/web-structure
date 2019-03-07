@@ -1,5 +1,6 @@
 import styled from 'emotion/react'
 import { Link } from 'react-router-dom'
+import {Button} from 'reactstrap'
 
 export const Body = styled.div`
   text-align: center;
@@ -58,7 +59,6 @@ export const Submit = styled.input`
 `
 
 export const FooterLink = styled(Link)`
-  position: fixed;
   left: 0;
   bottom: 15px;
   width: 100%;
@@ -66,8 +66,35 @@ export const FooterLink = styled(Link)`
   font-family: sans-serif;
   font-weight: 100;
   text-decoration: none;
-  color: rgb(10, 10, 10);
+  color: #fff;
   &:hover {
-    color: rgb(0, 0, 0);
+    color: rgba(255, 255, 255,0.5);
   }
+`
+
+export const ButtonSignUp = styled(Button)`
+  border-radius: 20px;
+  border: 2px solid #fff !important;
+  padding: 5px 22px;
+  color: #fff;
+  margin-left: 10px;
+`
+
+export const RegisterSpan = styled.span`
+  left: 0;
+  bottom: 15px;
+  width: 100%;
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: 100;
+  color: #fff;
+`
+export const PolicySpan = styled.span`
+  left: 0;
+  bottom: 15px;
+  width: 100%;
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: 100;
+  color: #fff;
 `

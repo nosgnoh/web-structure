@@ -5,7 +5,7 @@ import { Redirect } from 'react-router-dom'
 
 import { login } from '../../actions'
 
-import { FormTitle, FooterLink } from '../Styled'
+import { FormTitle, ButtonSignUp, RegisterSpan, PolicySpan } from '../Styled'
 import Forms from './Form'
 
 const Login = ({ user, login }) => {
@@ -15,10 +15,22 @@ const Login = ({ user, login }) => {
     login({ email, password })
   }
 
+  const handleSignUp = e => {
+    console.log(e);
+    e.preventDefault();
+  }
+
   return (
     <div>
+      {user.token && <Redirect to="/" />}
       <FormTitle>satisfy</FormTitle>
       <Forms onSubmit={handleSubmit} />
+      <RegisterSpan>{"Don't have an account yet?"}</RegisterSpan>
+      <ButtonSignUp onClick={handleSignUp} outline color="primary">SIGN UP</ButtonSignUp>
+      <br/>
+      <PolicySpan>{"By clicking Sign Up you agree to the"}</PolicySpan>
+      <br/>
+      <PolicySpan>{"Satisfy Term of Use and Privacy Policy"}</PolicySpan>
     </div>
   )
 }
