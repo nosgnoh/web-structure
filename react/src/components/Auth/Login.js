@@ -30,7 +30,7 @@ const Login = ({ user, login }) => {
       <br/>
       <PolicySpan>{"By clicking Sign Up you agree to the"}</PolicySpan>
       <br/>
-      <PolicySpan>{"Satisfy Term of Use and Privacy Policy"}</PolicySpan>
+      <PolicySpan>Satisfy <a href='#'>Term of Use</a> and <a href='#'>Privacy Policy</a> </PolicySpan>
     </div>
   )
 }
